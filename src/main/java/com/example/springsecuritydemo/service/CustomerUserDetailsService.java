@@ -1,5 +1,4 @@
 package com.example.springsecuritydemo.service;
-
 import com.example.springsecuritydemo.config.CustomUserDetails;
 import com.example.springsecuritydemo.entity.User;
 import com.example.springsecuritydemo.repository.UserRepository;
@@ -23,6 +22,4 @@ public class CustomerUserDetailsService implements UserDetailsService {
         }
         return new CustomUserDetails(user);
     }
-
-
 }
